@@ -4,7 +4,7 @@ def extract_text(url):
     end = url.find('&', start)
     return url[start:end] if end != -1 else url[start:]
 
-link=input()
+link=input('Input youtube url:')
 video_id=extract_text(link)
 print(video_id)
 # retrieve the available transcripts
